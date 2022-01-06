@@ -1,0 +1,124 @@
+*, html 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body 
+    font-family: $fComissioner
+    background: #FAFAFA
+    
+.navbar
+    height: 8vh
+    width: 100%
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    // background: red
+    display: flex
+    align-self: center
+    z-index: 10
+
+    .navbar-container
+        width: 80%
+        max-width: 1400px
+        margin: auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .nav-links
+            display: flex
+            align-items: center
+
+            .nav-item
+                margin-left: 3rem
+
+                a 
+                    color: $cWhite !important
+
+.bg-image 
+    background: url('../images/image-hero-desktop.jpg') no-repeat
+    height: 400px 
+    width: 100%
+    background-size: cover
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        height: 100%
+        width: 100%
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
+
+.card 
+    background: $cWhite
+    border-radius: 8px
+    background: $cWhite
+    border: 1px solid #e5e5e5
+    width: 730px
+    margin: auto
+    position: relative
+    z-index: 1
+
+.name-card
+    height: auto
+    margin-top: -5%
+    padding: 3rem
+
+    img.logo
+        position: absolute
+        left: 50%
+        top: -10%
+        transform: translateX(-50%)
+
+    .name-card-details
+        margin-bottom: 2.8rem
+
+        h2 
+            text-align: center
+            margin-bottom: .8rem
+            font-size: 1.7rem
+
+        p 
+            text-align: center
+            color: hsl(0, 0%, 48%)
+
+    .selection-content
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+.btn 
+    padding: 15px 35px
+    border-radius: 100px
+    font-size: .9rem
+    color: $cWhite
+
+.btn-primary 
+    background: $cCyan
+
+.btn-bookmark
+    background: $dWhite
+    position: relative
+
+    .btn-icon 
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: auto
+
+    span 
+        display: block
+        margin-left: 30px
+        color: hsl(0, 0%, 48%) 
+
+
+
+
+
